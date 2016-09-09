@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>城市</title>
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/Detail-1-3-1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery-1.3.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+<!--始终保持全屏幕需要刷新-->
+
+$(document).ready(function(e) {
+    $(".pic").css({width:$(window).width(),height:$(window).height()});
+});
+</script>
+<script>
+/*遮罩效果*/
+$(document).ready(function() {
+    $(function () {
+		$(".box ul li").hover(
+			function () {
+				$(this).find(".dask").stop().delay(50).animate({"top":50,opacity:0.8},500)
+			 },
+			function () {
+				$(this).find(".dask").stop().delay(50).animate({"top":200,opacity:0.8},500)
+			}
+			
+		)
+	})	
+	 $(function () {
+		$(".hello").hover(
+			function () {
+				$(this).find(".thedown").stop().delay(50).animate({"top":-50},500)
+				$(this).find(".thehead").stop().delay(50).animate({"top":150},500)
+			 },
+			function () {
+				$(this).find(".thedown").stop().delay(50).animate({"top":-210},500)
+				$(this).find(".thehead").stop().delay(50).animate({"top":-10},500)
+			}
+			
+		)
+	})
+});
+	
+</script>
+<!--<script>
+$(function(){
+   $(".togglecity").toggle(function(){
+		$(".hello_1").parent("div").animate({ height : 50} , 520 );
+		$(".hello_1").animate({marginTop : 0 } , 600 );
+		$(".content").animate({ height : 345} , 520 );
+		$(".content p").animate({ height : 345} , 520 );
+		$(this).blur();
+   },function(){
+		$(".hello_1").parent("div").animate({ height : 0} , 600 );
+		$(".hello_1").animate({marginTop : -205 } , 520 ); 
+		$(this).blur();
+   });
+})
+</script>-->
+</head>
+<body>
+
+<div class="header">
+  <div class="banner">
+    <div class="logo"> <img src="images/logo.png"/> </div>
+    <div class="site-name"><span>欢迎访问</span>
+    <br />
+        美丽的澳大利亚官方旅游网站</div><!--site-name end -->
+        <div class="right-text">
+           <p>登陆&nbsp;&nbsp;|&nbsp;&nbsp;注册 <span>&nbsp;&nbsp;&nbsp;&nbsp;商务会展&nbsp;&nbsp; 媒体网站&nbsp;&nbsp; international</span>
+               <br />
+               <img class="weather_1" src="images/weather-1.png"/> <em>15°</em>
+               <h6>布里斯本Brisbane</h6>
+           </p>
+       </div><!--right-text end -->
+    </div><!--banner end -->
+  
+ <div class="nav">
+    <div class="nav-text">
+      <ul>
+        <li class="nav-text-empty">&nbsp;</li>
+        <li class="nav-text-1"><a href="index.html">首页</a></li>
+        <li class="nav-text-2" t_nav="aboutAustralian"><a href="aboutAustralian.html">关于澳大利亚</a></li>
+        <li class="nav-text-3" t_nav="Mdd"><a href="Mdd.html">目的地</a></li>
+        <li class="nav-text-4" t_nav="Tszl"><a href="Tszl.html">探索之旅</a></li>
+        <li class="nav-text-5" t_nav="Jhxc"><a href="Jhxc.html">计划行程</a></li>
+        <li class="nav-text-6"><a href="Tghd.html">推广活动</a></li>
+        <li class="nav-text-7"><a href="#">旅游印记</a></li>
+      </ul>
+    </div><!--nav-text end --> 
+  </div><!--nav end --> 
+  
+  <div class="navigation-down">
+	<div id="aboutAustralian" class="nav-down-menu menu-1" style="display:none;" t_nav="aboutAustralian">
+			<div class="navigation-down-inner">
+				<dl class="detail_1_1">
+					<dt>澳大利亚官方信息</dt>
+					<dd><a><P>基本信息</P><img src="images/ab-01.jpg" /></a></dd>
+					<dd><a><P>海关检疫</P><img src="images/ab-02.jpg" /></a></dd>
+					<dd><a><p>自驾</p><img src="images/ab-03.jpg" /></a></dd>
+                    <dd><a><p>签证</p><img src="images/ab-04.jpg" /></a></dd>
+                    <dd><a><P>服务及健康安全</P><img src="images/ab-05.jpg" /></a></dd>
+				</dl>
+				<dl class="detail_1_2">
+					<dt>澳大利亚独特之处</dt>
+					<dd><a href="Detail-1-2-1.html"><p>澳大利亚的动植物</p></a></dd>
+					<dd><a><p>澳大利亚历史</p></a></dd>
+					<dd><a><p>澳大利亚文化</p></a></dd>
+					<dd><a><p>澳大利亚艺术</p></a></dd>
+                    <dd><a><p>澳大利亚原住民</p></a></dd>
+                    <dd><a><p>&nbsp;</p></a></dd>
+				</dl>
+				<dl class="detail_1_3">
+					<dt>澳大利亚自然地貌</dt>
+					<dd><a href="Detail-1-3-1.html"><P>城市</P></a></dd>
+					<dd><a><p>海岸</p></a></dd>
+					<dd><a><P>内陆</P></a></dd>
+                    <dd><a><P>自然风光</P></a></dd>
+                    <dd><a><P>葡萄酒产区</P></a></dd>
+                    <dd><a><P>岛屿</P></a></dd>
+                    <dd><a><P>海滩</P></a></dd>
+				</dl>
+            </div><!--navigation-down-inner end -->
+		</div>
+        
+		<div id="Mdd" class="nav-down-menu menu-2" style="display:none;" t_nav="Mdd">
+			<div class="navigation-down-inner">
+				<dl class="detail_2_1">
+                	<dt>州和领地</dt>
+                	<dd><a><p>新南威尔士</p></a></dd>
+                    <dd><a><p>西澳大利亚</p></a></dd>
+                    <dd><a><p>维多利亚&nbsp;</p></a></dd>
+                    <dd><a><p>南澳大利亚</p></a></dd>
+                    <dd><a><p>昆士兰&nbsp;</p></a></dd>
+                    <dd><a><p>塔斯马尼亚</p></a></dd>
+                    <dd><a><p>北领地&nbsp;</p></a></dd>
+                    <dd><a><p>澳大利亚首都领地</p></a></dd>
+                </dl>
+				<dl class="detail_2_2">
+                    <dt>城市</dt>
+                    <dd><a><P>悉尼</P></a></dd>
+                    <dd><a><P>柏斯</P></a></dd>
+                    <dd><a><P>凯恩斯</P></a></dd>
+                    <dd><a><P>墨尔本</P></a></dd>
+                    <dd><a><P>阿德莱德</P></a></dd>
+                    <dd><a><P>黄金海岸</P></a></dd>
+                    <dd><a><P>布里斯班</P></a></dd>
+                    <dd><a><P>赫伯特</P></a></dd>
+                    <dd><a><P>爱丽丝泉</P></a></dd>
+                    <dd><a><P>达尔文</P></a></dd>
+                    <dd><a><P>堪培拉</P></a></dd>
+               </dl>
+			</div><!--navigation-down-inner end -->
+		</div>
+        
+		<div id="Tszl" class="nav-down-menu menu-3" style="display:none;" t_nav="Tszl">
+			<div class="navigation-down-inner">
+				<dl class="detail_3_1">
+                <dt>七大尽是不同</dt>
+                <dd><a><P>非凡体验</P><img src="images/exp-01.jpg" /></a></dd>
+                <dd><a><P>海岸之旅</P><img src="images/exp-02.jpg" /></a></dd>
+                <dd><a><P>都市生活</P><img src="images/exp-03.jpg" /></a></dd>
+                <dd><a><P>自然奇景</P><img src="images/exp-04.jpg" /></a></dd>
+                <dd><a><P>美食佳酿</P><img src="images/exp-05.jpg" /></a></dd>
+                <dd><a><P>自在旅程</P><img src="images/exp-06.jpg" /></a></dd>
+                <dd><a><P>格调之旅</P><img src="images/exp-07.jpg" /></a></dd>
+                </dl>
+				<dl class="detail_3_2">
+                <dt>标志性景点</dt>
+                <dd><a><P>大堡礁</P></a></dd>
+                <dd><a><P>塔斯马尼亚公园国家</P></a></dd>
+                <dd><a><P>红土中心地区</P></a></dd>
+                <dd><a><P>宁格鲁礁</P></a></dd>
+                <dd><a><P>大洋路</P></a></dd>
+                <dd><a><P>费沙岛</P></a></dd>
+                <dd><a><P>卡卡社</P></a></dd>
+                <dd><a><P>蓝山</P></a></dd>
+                <dd><a><P>金伯利</P></a></dd>
+                <dd><a><P>纳玛吉国家公园</P></a></dd>
+                <dd><a><P>袋鼠岛</P></a></dd>
+                <dd><a><P>菲欣纳</P></a></dd>
+                <dd><a><P>拜伦湾</P></a></dd>
+                <dd><a><P>悉尼海港</P></a></dd>
+                </dl>
+				<dl class="detail_3_3">
+                <dt>活动盛世</dt>
+                <dd><a><P>活动盛世日历表</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                <dd><a><P>&nbsp;</P></a></dd>
+                </dl>
+			</div><!--navigation-down-inner end -->
+		</div>    
+	</div><!--navigation-down end -->
+</div><!--header end --> 
+
+
+<div class="nav_img" ><img class="pic" src="images/detail-1-3-1-bg.jpg" /></div><!--nav_img end -->
+<div class="about_text" style="text-shadow:2px 2px 4px #000;"><p><span>城市</span><br />
+别样的风光，<br/>
+带你走进全新的城市体验。</p><hr />
+</div><!--about_text end -->
+
+<div class="main_container">
+<div class="content">
+    <div class="thetitle"><h5>首页&nbsp;>&nbsp;关于澳大利亚&nbsp;>&nbsp;城市</h5></div>
+    <div class="hello">
+    	<div class="thedown"><ul>
+        <li><a style="color:#000;">城市</a></li>
+        <li><a style="color:#000;">内陆</a></li>
+        <li><a style="color:#000;">葡萄酒产区</a></li>
+        <li><a style="color:#000;">海滩</a></li>
+        <li><a style="color:#000;">海岸</a></li>
+        <li><a style="color:#000;">自然风光</a></li>
+        <li><a style="color:#000;">岛屿</a></li>
+        </ul></div>
+        <div class="thehead"><em>切换自然地貌</em><img src="images/arrow_2.png" /></div>
+</div>
+<br />
+<br />
+<P>悉尼有享誉世界的海港；墨尔本则有世界领先的文化区；堪培拉可以参观国家景点；阿得莱德有休闲的生活态度；在珀斯可以躺在白沙滩上休憩；达尔文有闲适安逸的环境……现在就开始探索澳大利亚的城市吧！
+<br />
+<br />
+无论你到澳大利亚的哪座城市游玩，不难发现摩天大楼、购物中心与高山、海洋、河流和丛林都不过咫尺之遥。
+<br />
+<br />
+<em><img src="images/1.png" />&nbsp;&nbsp;分享&nbsp;&nbsp;&nbsp;<img src="images/2.png" />&nbsp;&nbsp;打印</em></P>
+<br />
+</div>
+
+<div class="box">
+	<ul>
+		<li><a><img src="images/zhezhao_1.jpg" alt="" /></a><div class="dask"><h2>悉尼</h2><p>
+作为澳大利亚 第一大城市，悉尼闪耀着独一无二的光芒。绝佳的气侯和热情的人们、世界级的餐厅和购物商场，还有令人惊叹的自然风光。来到悉尼，你也许会舍不得离去。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_2.jpg" alt="" /></a><div class="dask"><h2>墨尔本</h2><p>
+作为澳大利亚第二大城市以及有“花园之州”美名的维多利亚州首府，墨尔本是充满活力的时尚、体育、文化和餐饮中心。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_3.jpg" alt="" /></a><div class="dask"><h2>堪培拉</h2><p>
+堪培拉不仅是澳大利亚的首都，还是世界上城市规划与景观建筑最杰出的范例之一。无论是湖泊、公园等户外景致，还是博物馆、艺术馆等城市建筑都享誉世界。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_4.jpg" alt="" /></a><div class="dask"><h2>布里斯班</h2><p>
+昆士兰州首府。旖旎多姿的布里斯班河穿城而过，现代都市与亚热带自然风光蜿蜒交织，这里是通往该州众多景点的门户，更是你规划诸多精彩行程的枢纽之地。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_5.jpg" alt="" /></a><div class="dask"><h2>阿得莱德</h2><p>
+初到这座南澳大利亚的首府城市，便能感受到扑面而来的文艺气息，阿得莱德像极了一位老派的诗人，表面上严守优雅的风度与传统，作品中却无不流露出随性而为的桀骜灵魂。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_6.jpg" alt="" /></a><div class="dask"><h2>珀斯</h2><p>
+这座澳大利亚最西端的首府城市，坐落于天鹅河畔，被印度洋的海滩及天鹅谷的葡萄园所环绕，是通往散落于西澳大利亚广阔天地间各个景点的枢纽。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_7.jpg" alt="" /></a><div class="dask"><h2>达尔文</h2><p>
+很难用一个词来确切形容达尔文，作为澳大利亚唯一的热带首府，这里既是生机勃勃的城市，也是气氛闲散的度假胜地。总之，你很难抗拒它的魅力。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_8.jpg" alt="" /></a><div class="dask"><h2>荷伯特</h2><p>
+荷伯特不仅是澳大利亚第二古老的城市，它还拥有澳大利亚最美首府的美名。这座城镇丰富的殖民地遗址和自然魅力会让你为之倾倒。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_9.jpg" alt="" /></a><div class="dask"><h2>凯恩斯</h2><p>
+先在休闲度假城市凯恩斯落脚，然后前往列入世界自然遗产名录的大堡礁，饱览瑰丽缤纷的水下世界。唯此，才能证明你来过昆士兰。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_10.jpg" alt="" /></a><div class="dask"><h2>爱丽丝泉</h2><p>
+爱丽丝泉是澳大利亚著名的内陆城镇，这个小镇对长途旅行者而言是重要的逗留地，从这里开启的旅程，将成为你珍贵的记忆。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_11.jpg" alt="" /></a><div class="dask"><h2>黄金海岸</h2><p>
+黄金海岸是昆士兰州第二大城市，坐拥全澳大利亚最美轮美奂的海滩以及举世闻名的“冲浪者天堂”，这里还是“比基尼”的发源地。</p><a href="#">开始畅游</a></div></li>
+		<li><a><img src="images/zhezhao_12.jpg" alt="" /></a><div class="dask"><h2>布鲁姆</h2><p>
+充满异域风情的布鲁姆是盛产珍珠的小镇，也犹如一颗珍珠镶嵌在通向西澳大利亚金伯利地区的西部要塞，其浓厚的历史文化底蕴与其地貌一样充满了神秘的色彩和无穷的魅力。</p><a href="#">开始畅游</a></div></li>
+	</ul>
+</div>
+</div><!--main_container end -->
+
+
+<div class="footer">
+<div class="footer_left">
+    <ul>
+    <li><a href="#">网站地图</a></li>
+    <li><a href="#">隐私政策</a></li>
+    <li><a href="#">商务会展</a></li>
+    <li><a href="#">地图探索</a></li>
+    <li><a href="#">条款与条件</a></li>
+    <li><a href="#">Cookies</a></li>
+    <li><a href="#">特惠声明</a></li>
+    <li><a href="#">反馈意见</a></li>
+    </ul>
+<p>&copy;此页面有李家豪同学模仿制作，只能用于学习用途，其他商业用途均不得使用。<br />
+Tourism Australia 2013沪ICP备08007532号-3</p></div>
+<div class="footer_right"><p>信息订阅</p><input  type="text" class="foot_content" name="name"  placeholder="Email"/><input class="button" type="button" name="name"  value="提交" /></div>
+
+</div><!--footer end -->
+
+
+</body>
+</html>

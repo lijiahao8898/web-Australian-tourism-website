@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>曲线阴影和翘脚阴影</title>
+</head>
+
+<style>
+body{ padding:0; margin:0;}
+.wrap{ position:relative;  width:90%; height:300px; margin:50px auto; background-color:#efefef; }
+.wrap h1 {text-align:center; line-height:300px;}
+.effect{ box-shadow:0 1px 3px rgba(0,0,0,0.3),0 1px 40px rgba(0,0,0,0.1);}
+.effect:before,.effect:after{ content:''; position:absolute; top:50%; bottom:0; left:10px; right:10px; background-color:#f00; box-shadow:0 0 20px rgba(0,0,0,0.8); border-radius:100px/10px; z-index:-1;}
+
+.line { width:1028px; height:auto; margin:20px auto;}
+.line li { position:relative; list-style-type:none; float:left; margin:10px; display:block; padding:5px; border:2px solid #ccc; box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0 20px rgba(0,0,0,0.3) inset; background-color:#ffffff;}
+.line li:before{ content:''; top:30px; bottom:15px; left:16px; right:18px; position:absolute; z-index:-2; box-shadow:0 8px 20px rgba(0,0,0,0.8);-webkit-transform: skew(12deg) rotate(4deg); -moz-transform:skew(12deg) rotate(4deg); -o-transform: skew(12deg) rotate(4deg); -ms-transform: skew(12deg) rotate(4deg); }
+.line li:after{ width: 92.8%; height: 80%; content: ''; left: 20px; bottom:15px;  position:absolute; z-index:-2; box-shadow:0 8px 20px rgba(0,0,0,0.8);-webkit-transform: skew(-12deg) rotate(-4deg); -moz-transform:skew(-12deg) rotate(-4deg); -o-transform: skew(-12deg) rotate(-4deg); -ms-transform: skew(-12deg) rotate(-4deg); }
+</style>
+
+<body>
+
+<div class="wrap effect">
+<h1>Shadow Effect</h1>
+</div>
+
+<ul class="line">
+<li><img src="images/zhezhao_1.jpg" /></li>
+<li><img src="images/zhezhao_2.jpg" /></li>
+</ul>
+
+</body>
+</html>

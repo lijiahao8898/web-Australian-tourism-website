@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script>
+ function isEmail(email) {   
+    var strEmail=document.getElementById(email).value;   
+    if (strEmail.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) != -1)   
+    {   
+            document.getElementById('spantest').innerHTML = "邮箱格式正确";  
+            b = true;  
+            return true;   
+    }else{   
+            document.getElementById('spantest').innerHTML = "邮箱格式错误！";  
+            document.getElementById(email).focus();   
+            b = false;  
+            return false;   
+    }   
+      
+  
+}   
+
+</script>
+</head>
+
+<body>
+  <div class="thelogin" style="width:465px; height:480px; padding:10px;">
+    <div class="thecontainer">
+      <input class="text" type="text" placeholder="姓" />
+      <input class="text" type="text" placeholder="名" />
+      <input class="text" id="email" type="email" placeholder="邮箱地址" />
+      <div id="spantest" style="color:red;"></div>
+      <input class="text" type="text" placeholder="密码" />
+      <p style="color:red;">密码应该是6到16位之间的英文或数字的组合</p>
+      <input class="text" type="text" placeholder="确认密码" />
+      <input class="text" type="text" placeholder="安全码" />
+      <br />
+      <input class="checkbox" name="" type="checkbox" value="" />
+      <span>接收来自澳大利亚旅游局及其合作伙伴的最新资讯</span>
+      <input class="checkbox" name="input" type="checkbox" value="" />
+      <span>同意条款</span> </div>
+    <div class="thebutton"><a href="#">立即注册</a></div>
+    <hr />
+    <div class="thebottom">
+      <p>已有澳大利亚旅游局官网帐号？<a href="login.html">立即登录</a></p>
+    </div>
+  </div>
+  <!--thelogin end --> 
+</body>
+</html>

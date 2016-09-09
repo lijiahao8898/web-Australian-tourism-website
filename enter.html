@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3实现水位充满文字特效 - 站长素材</title>
+<style>
+a{ text-decoration:none;}
+.loading {
+	text-transform: uppercase;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 88px;
+	;
+	text-align: center;
+	height: 88px;
+	line-height: 88px;
+	vertical-align: bottom;
+	position: absolute;
+	left: 1px;
+	right: 0;
+	top: 183px;
+	bottom: 0;
+	display: block;
+}
+.loading-2 {
+	top: 274px;
+	left: -51px;
+	width: 650px;
+	height: 159px;
+	font-size: 0;
+	background: rgba(255, 255, 255, 0.06);
+	margin: 0 auto;
+}
+.loading-2-text { background-image:url("images/cZc1otp1.png"); width: 650px; height: 159px; display: inline-block; }
+
+@keyframes wave-animation {
+  0% { background-position: 0 bottom; }
+100% { background-position: 200px bottom;}
+}
+@keyframes loading-animation {
+  0% { background-size: 200px 0px;}
+100% { background-size: 200px 200px; }
+}
+.wave { background-image: url("images/uFpLbYt.png"); -moz-background-clip: text; -o-background-clip: text; -webkit-background-clip: text;
+ background-clip: text; color: transparent; text-shadow: 0px 0px rgba(255, 255, 255, 0.06); animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate; background-size: 200px 100px; background-repeat: repeat-x; opacity: 1;}
+.wave-2 { -moz-background-clip: initial; -o-background-clip: initial; -webkit-background-clip: initial; background-clip: initial; display: inline-block;}
+a:hover { opacity:0.5;}
+</style>
+ <script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="loading wave">
+ 欢迎来到澳大利亚！
+</div>
+<!-- For Firefox -->
+<div class="loading loading-2 wave wave-2">
+  <div class="loading-2-text"></div>
+</div>
+<div class="content" style=" width:200px;margin:450px auto 0 auto;;"><a href="index.html" style="padding:15px; border-radius:10px; font-size:18px; font-weight:bold;background-color:#0CF; color:#fff; box-shadow:2px 2px 3px #333;
+">Travel</a></div>
+</body>
+</html>
