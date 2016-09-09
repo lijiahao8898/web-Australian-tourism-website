@@ -1,0 +1,38 @@
+/* CSS Document */
+.nav_img .pic{ width:100%; position:relative; top:130px; z-index:-1;}
+.about_text{ position:absolute; z-index:2; top:300px; left:70px;}
+.about_text p{ color:#fff; font-size:20px; line-height:30px;}
+.about_text p span{ display:block; margin-bottom:5px; font-size:60px; font-weight:normal;}
+/*.main_container.css*/
+.main_container{ padding-top:130px; overflow:hidden;}
+.main_container .content{ background-color:#dcddde;box-shadow:0px 2px 3px #999; margin-bottom:50px;}
+.main_container .content h5{ display:block; width:100%; padding:5px 0 5px 5px; border-bottom:6px solid #15535c; color:#626262;}
+.main_container .content p{ width:940px; margin:0 auto; padding:20px 0 25px 0; color:#626262;}
+.main_container .tsdys dd{ width:120px;}
+.main_container dl{ overflow:hidden; display:block; width:940px; margin:0 auto 30px auto;}
+.main_container dl dt{ float:left; border:1px solid #999; padding:3px;}
+.main_container dl dd { float:left; width:210px; height:25px; border-bottom:1px dotted #333; margin:6px 10px 6px 30px; padding:0 0 6px 0;}
+.main_container dl dd span{ font-size:16px; color:#15535c; font-weight:bold;}
+.main_container dl dd img {float:right;
+							transition:ease-out 0.2s;/*注释：Internet Explorer 9 以及更早版本的浏览器不支持 transition 属性。*/
+							-moz-transition:ease-out 0.2s;
+							-o-transition:ease-out 0.2s;
+            				-webkit-transition:ease-out 0.2s;
+							-ms-transition:ease-out 0.2s;
+            				display:block; 
+							} 
+.main_container dl dd p { float:left;font-size:12px; color:#333;
+						    transition:ease-out 0.2s;/*注释：Internet Explorer 9 以及更早版本的浏览器不支持 transition 属性。*/
+							-moz-transition:ease-out 0.2s;
+							-o-transition:ease-out 0.2s;
+            				-webkit-transition:ease-out 0.2s;
+							-ms-transition:ease-out 0.2s;
+							}
+.main_container dl dd:hover img{
+							transform:rotate(90deg) scale(1.2);
+                  			-moz-transform:rotate(90deg) scale(1.2);
+                  			-o-transform:rotate(90deg) scale(1.2);
+                  			-webkit-transform:rotate(90deg) scale(1.2);
+							-ms-transform:rotate(90deg) scale(1.2);
+							}
+.main_container dl dd:hover p {margin-left:-10px;}

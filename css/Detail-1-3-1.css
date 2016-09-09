@@ -1,0 +1,37 @@
+/* CSS Document */
+.nav_img .pic{ width:100%; position:relative; top:0px; z-index:0;}
+.about_text{ position:absolute; z-index:2; top:250px; left:750px;}
+.about_text p{ color:#fff; font-size:20px; line-height:30px;}
+.about_text p span{ display:block; margin-bottom:5px; font-size:80px; font-weight:normal; line-height:80px;}
+/*.main_container.css*/
+.main_container{overflow:hidden;}
+.main_container .content{ background-color:#dcddde;box-shadow:0px 2px 3px #999; margin-bottom:50px; overflow:hidden;}
+.main_container .content .thetitle{ position:relative;z-index:5;background-color:#dcddde;}
+.main_container .content h5{ position:relative; display:block; width:100%; padding:5px 0 5px 5px; border-bottom:6px solid #174f71; color:#626262;}
+.main_container .content p{ width:940px; margin:0 auto; padding:20px 0 25px 0; color:#626262;}
+.main_container .content .hello{position:relative; width:240px;}
+.main_container .content .hello .thedown{margin-left:10px;width:480px;height:200px;background:#fff;position:absolute; z-index:0;top:-210px;left:0; border-radius:0 0 10px 0; box-shadow:2px 2px 3px rgba(0,0,0,0.5);}
+.main_container .content .hello .thedown ul{ margin:65px auto 0 auto; display:block; overflow:hidden;}
+.main_container .content .hello .thedown li{ float:left; display:block; margin-left:10px; margin-top:5px; font-size:18px; overflow:hidden; border-bottom:1px dashed #000; width:95px; text-align:center;}
+.main_container .content .hello .thehead{width:240px;height:50px;float:left;position:relative; top:-10px; z-index:3;margin-left:10px;display:block; background-color:#fff; border-radius:0 0 10px 10px; box-shadow:2px 2px 3px rgba(0,0,0,0.5);}
+.main_container .content .hello .thehead em{overflow:hidden; line-height:35px; float:left; font-size:18px; color:#174f71; font-weight:bold; margin-top:10px; margin-left:30px;}
+.main_container .content .hello .thehead img{ float:right; margin-top:12px; margin-right:15px; transition:ease-out 0.2s;-moz-transition:ease-out 0.2s;-o-transition:ease-out 0.2s;-webkit-transition:ease-out 0.2s;-ms-transition:ease-out 0.2s;}
+.main_container .content .hello:hover img{transform:rotate(180deg);
+							-webkit-transform:rotate(180deg);
+							-o-transform:rotate(180deg);
+							-ms-transform:rotate(180deg);
+							-moz-transform:rotate(180deg);}
+
+
+
+
+
+/*zhezhao.up.css*/
+.main_container .box{width:1000px; margin:0 auto;overflow:hidden;}
+.main_container .box ul li{width:480px;height:250px;float:left;position:relative;overflow:hidden; margin:10px;display:block; box-shadow:2px 2px 3px rgba(51,51,51,0.8);}
+
+.main_container .box ul li .dask{width:480px;height:250px;background:#000;opacity:0.8;position:absolute;top:200px;left:0;}
+.main_container .box ul li .dask p{color:#fff; width:350px; height:100px; margin:0 auto;}
+.main_container .box ul li .dask h2{color:#fff; text-align:center; margin:10px 0 10px 0;}
+.main_container .box ul li .dask a{ display:block; color:#fff; width:100px; text-align:center; margin:15px auto 0 auto; border-radius:5px; background-color:#09C; opacity:0.5; transition:ease 0.2s;}
+.main_container .box ul li .dask a:hover { opacity:1;}

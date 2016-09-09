@@ -1,0 +1,13 @@
+/* CSS Document */
+.thelogin{ background-color:#ccc;}
+.thecontainer{ text-align:left; margin:0 auto; width:360px;}
+.text{ border-radius:5px; background-color:#fcfcfc; margin:10px 10px 8px 0; padding-left:10px; border:none; line-height:30px; height:30px; box-shadow:3px 3px 3px rgba(0,0,0,0.4) inset;}
+input:nth-child(1),input:nth-child(2){ width:143px;}
+input:nth-child(3),input:nth-child(5),input:nth-child(7){ width:315px;}
+input:nth-child(8){ width:150px;}
+.checkbox{ margin-top:10px; margin-right:12px;width:16px; height:16px; float:left;}
+.thelogin .thecontainer span{ display:block; color:#666; line-height:35px; font-size:12px;}
+.thebutton{ width:180px; margin:20px auto 26px auto;}
+.thebutton a{ padding:5px 30px 5px 30px; background-color:#20688d; border-radius:5px; font-size:18px; letter-spacing:5px; text-decoration:none;}
+.thebottom{ text-align:center;}
+.thebutton a:hover{ background-color:#005581;}

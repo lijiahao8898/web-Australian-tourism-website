@@ -1,0 +1,123 @@
+/* CSS Document */
+body{ min-height:330px; min-width:1024px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset/*将表单内的相关元素分组*/,legend/*为 fieldset 元素定义标题*/,input,button,textarea,p,blockquote,th,td{ margin:0; padding:0; line-height:25px; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{ font-size:14px; font-family: "Microsoft YaHei"; }
+td,th,caption/*table之后用于建表格标题*/{ font-size:14px; }
+h1, h2, h3, h4, h5, h6{ font-weight:normal; font-size:100%;}
+address, caption, cite/*对参考文献的引用*/, code, dfn, em, strong, th, var{ font-style:normal; font-weight:normal;}
+a{ color:#fff; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+img{ border:none; }
+ol,ul,li{ list-style:none; }
+table{ border-collapse/*为表格设置合并边框模型*/:collapse; }
+html{ overflow-y: scroll;/*垂直方向溢出增加滚动条*/} 
+/* css common */
+.clearfix:after{ content: "."; display: block; height:0; clear:both; visibility: hidden;/*visibility 属性规定元素是否可见。*/}
+.clearfix { *zoom:1; }/*给IE6清除浮动的*/
+
+/*banner.css*/
+.header{ width:100%; position:fixed; top:0; left:0; z-index:10;}
+.header .banner{ min-width:1024px; overflow:hidden; padding-bottom:10px; background-color:#1ab7ea;}
+.header .banner .logo{ width:170px; float:left; padding:20px 0 0 20px;}
+.header .banner .site-name{ float:left; font-size:20px; color:#efefef; letter-spacing:2px; border-left:1px solid rgba( 255 , 255 , 255 , 0.5); padding-left:1.5%; margin:25px 0 0 10px;}
+.header .banner .right-text{ overflow:hidden; float:right; margin:15px 16px 0 0;}
+.header .banner .right-text a{ text-decoration:none;}
+.header .banner .right-text p{ font-size:12px; color:#efefef;}
+.header .banner .right-text .weather_1 { display:block; float:left; margin:8px 20px 2px 0;}
+.header .banner .right-text span{ color:#CCC;}
+.header .banner .right-text em{ float:left; overflow:hidden; font-size:30px; line-height:30px; border-left:1px solid rgba(255,255,255,0.5); padding:5px 20px; margin-top:10px;}
+.header .banner .right-text h6{ width:70px; float:left; color:#efefef;}
+
+/*nav.css*/
+.nav{ clear:both; overflow:hidden; width:100%; background:#404040; box-shadow: 0px 2px 3px #333333;}
+.nav .nav-text{ min-width:1024px; overflow:hidden;}
+.nav .nav-text ul li{ float:left; font-size:14px; border-left:1px solid rgba(150,150,150,0.1);border-right:1px solid rgba(0,0,0,0.4);}
+.nav .nav-text ul li a{ text-decoration:none; color:#d1d2d4; padding:0px 16px;}
+.nav .nav-text ul .nav-text-empty{ padding-left:80px;}
+
+/*头部下拉菜单的css样式*/
+.navigation-down .navigation-down-inner dl{ overflow:hidden; float:left; text-align:center; padding:10px 15px 0 15px; border-top:1px solid rgba(150,150,150,0.2);}
+.navigation-down .navigation-down-inner dd p{ font-size:12px; color:#d1d2d4; cursor:pointer;}
+.navigation-down .navigation-down-inner a:hover{ text-decoration:none;}
+.navigation-down .navigation-down-inner a:hover p{ color:#fff;}
+.navigation-down .navigation-down-inner img{ float:left; margin:8px; border:1px solid #333;}
+.navigation-down .navigation-down-inner img:hover{ border:1px solid #fff; box-shadow:2px 2px 8px #000;}
+/*aboutAustralian*/
+.navigation-down .menu-1{ overflow:hidden; width:620px; background:#404040; border-radius:0 0 10px 10px; box-shadow:2px 2px 3px #333; color:#CCC;margin-left:60px;}
+.navigation-down #aboutAustralian .detail_1_1{ overflow:hidden; width:300px; border-right:1px solid rgba(0,0,0,0.4);}
+.navigation-down #aboutAustralian .detail_1_1 dd{ float:left; margin-top:5px;}
+.navigation-down #aboutAustralian .detail_1_2{ border-left:1px solid rgba(150,150,150,0.1); border-right:1px solid rgba(0,0,0,0.4);}
+.navigation-down #aboutAustralian .detail_1_2 dd{ text-align:left; margin-top:5px;}
+.navigation-down #aboutAustralian .detail_1_3{ border-left:1px solid rgba(150,150,150,0.1);} 
+/*#Mdd */
+.navigation-down .menu-2{ overflow:hidden; width:488px; background:#404040; border-radius:0 0 10px 10px; box-shadow:2px 2px 3px #333; color:#CCC; margin-left:120px;}
+.navigation-down #Mdd dd{ width:60px; text-align:center; margin:5px 10px; float:left;}
+.navigation-down #Mdd .detail_2_1{ overflow:hidden; width:180px; text-align:center; border-right:1px solid rgba(0,0,0,0.4);}
+.navigation-down #Mdd .detail_2_2{ overflow:hidden; width:240px; text-align:center;border-left:1px solid rgba(150,150,150,0.1);}
+/*#Tszl*/
+.navigation-down .menu-3{ overflow:hidden; width:690px; background:#404040; border-radius:0 0 10px 10px; box-shadow:2px 2px 3px #333; color:#CCC; margin-left:120px;}
+.navigation-down #Tszl .detail_3_1{ width:270px; overflow:hidden; border-right:1px solid rgba(0,0,0,0.4);}
+.navigation-down #Tszl .detail_3_1 dd{ float:left; margin-top:5px;}
+.navigation-down #Tszl .detail_3_2{ width:240px; overflow:hidden; border-left:1px solid rgba(150,150,150,0.1);border-right:1px solid rgba(0,0,0,0.4);}
+.navigation-down #Tszl .detail_3_2 dd{ width:60px; text-align:center; margin:5px 10px; float:left;}
+.navigation-down #Tszl .detail_3_3{ overflow:hidden; border-left:1px solid rgba(150,150,150,0.1);}
+
+#back{ color:#fff; font-size:30px; width:55px; height:55px; border:2px solid #ccc; background:#ccc; cursor:pointer; position:fixed; bottom:50px;
+ right:30px; text-align:center; line-height:50px; display:none; _position:absolute; _right:50px; _top:expression(eval(document.documentElement.clientHeight-this.offsetHeight-50+document.documentElement.scrollTop));z-index:10;}
+
+/*Jquery.header.css*/
+.intro-1{ background-color:#0a4f76; transition:background-color 0.15s ease-in 0s; box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+.intro-2{ background-color:#9b6f49; transition:background-color 0.15s ease-in 0s;box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+.intro-3{ background-color:#442f3e; transition:background-color 0.15s ease-in 0s; box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+.intro-4{ background-color:#15535c; transition:background-color 0.15s ease-in 0s; box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+.intro-5{ background-color:#e88949; transition:background-color 0.15s ease-in 0s; box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+.intro-6{ background-color:#3a4163; transition:background-color 0.15s ease-in 0s; box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+.intro-7{ background-color:#4e733d; transition:background-color 0.15s ease-in 0s; box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4) inset, -2px -2px 3px rgba(0 , 0, 0, 0.4) inset;}
+
+.shade{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: black;
+	opacity: .6;
+	filter:alpha(opacity=60);
+	display: none;
+	z-index: 2020;
+}
+.shade_2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: black;
+	opacity: .6;
+	filter:alpha(opacity=60);
+	display: none;
+	z-index: 2020;
+}
+.imglab-box{
+	position:fixed;
+	width: 465px;
+	height: 480px;
+	display: none;
+	z-index: 2021;
+}
+.imglab-box_2{
+	position:fixed;
+	width: 465px;
+	height: 480px;
+	display: none;
+	z-index: 2021;
+}
+.close{
+	cursor: pointer;
+}
+.close_2{
+	cursor: pointer;
+}
+.thehead{ width:100%; color:#fff; line-height:35px; overflow:hidden; background-color:#1962ae;}
+.thehead img{float: right; padding-top: 8px; margin-right: 20px;}
+.thehead p{ float: left; color: #fff; font-size:16px; line-height: 32px; padding-left:2%;}
